@@ -112,9 +112,7 @@
 .datetimepicker .future {
   color: #999;
 }
-
-.datetimeinput .dropdown-toggle:after {
+.datetimeinput .dropdown-toggle::after {
   display: none;
 }
-
 /*# sourceMappingURL=datetimepicker.css.map */

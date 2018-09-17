@@ -23,7 +23,7 @@ module.exports = {
   app: sourceFiles,
   bump: bumpFiles.concat(cssFiles),
   css: cssFiles,
-  lint: miscFiles.concat(sourceFiles).concat(testFiles).concat(miscFiles),
+  lint: miscFiles.concat(sourceFiles).concat(testFiles).concat(miscFiles).concat('!src/js/datetimepicker.templates.js'),
   scss: scssFiles,
   src: sourceFiles,
   test: testFiles,
