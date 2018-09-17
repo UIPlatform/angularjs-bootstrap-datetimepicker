@@ -78,7 +78,7 @@
   },
   "scripts": {
     "coverage:upload": "cat build/coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post",
     "test": "npm run test-commonjs && npm run test-webpack && npm run test-unit",
     "test-commonjs": "run-browser test/commonjs/browserify.test.js -b",
     "test-unit": "gulp",
