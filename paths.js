@@ -16,6 +16,7 @@ var miscFiles = ['GruntFile.js', 'gulpfile.js', 'karma.conf.js', 'paths.js']
 var scssFiles = ['src/scss/*.scss']
 var sourceFiles = ['src/**/*.js']
 var testFiles = ['test/**/*.spec.js']
+var distFolder = './dist/'
 
 module.exports = {
   all: modules.concat(sourceFiles).concat(testFiles).concat(demoFiles).concat(cssFiles),
@@ -25,5 +26,6 @@ module.exports = {
   lint: miscFiles.concat(sourceFiles).concat(testFiles).concat(miscFiles),
   scss: scssFiles,
   src: sourceFiles,
-  test: testFiles
+  test: testFiles,
+  dist: distFolder
 }

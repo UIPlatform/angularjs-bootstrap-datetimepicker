@@ -10,6 +10,7 @@ var paths = require('./paths')
 var plato = require('plato')
 var Server = require('karma').Server
 var standard = require('gulp-standard')
+var concat = require('gulp-concat')
 
 var karmaConfig = path.join(__dirname, 'karma.conf.js')
 
@@ -112,6 +113,20 @@ gulp.task('test', ['lint', 'css-lint'], function (done) {
 })
 
 gulp.task('default', ['complexity', 'test'])
+
+gulp.task('build-js',['templatecache'],function(){
+  return gulp.src(paths.src)
+      .pipe(concat('datetimepicker.js'))
+      .pipe(gulp.dest(paths.dist));
+})
+
+gulp.task('build-css',['scss'],function(){
+  return gulp.src(paths.css)
+      .pipe(concat('datetimepicker.css'))
+      .pipe(gulp.dest(paths.dist));
+})
+
+gulp.task('build',['build-js','build-css'])
 
 function testConfig (options) {
   var travisDefaultOptions = {
