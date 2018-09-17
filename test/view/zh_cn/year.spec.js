@@ -60,8 +60,8 @@ describe('year view with ng-model = null', function () {
     it('has a `<tr>` that contains a <th class=`left`> element', function () {
       expect(jQuery('th[class*=left]', element).length).toBe(1)
     })
-    it('has a `<th class=`left`>` that contains a <i class=`icon-arrow-left`> element', function () {
-      expect(jQuery('th[class*=left] > i[class*=icon-arrow-left]', element).length).toBe(1)
+    it('has a `<th class=`left`>` that contains a <i class=`fa-chevron-left`> element', function () {
+      expect(jQuery('th[class*=left] > i[class*=fa-chevron-left]', element).length).toBe(1)
     })
     it('has a `<tr>` that contains a <th class=`switch` colspan="5"> element', function () {
       expect(jQuery('th[class*=switch][colspan=5]', element).length).toBe(1)
@@ -69,8 +69,8 @@ describe('year view with ng-model = null', function () {
     it('has a `<tr>` that contains a <th class=`right`> element', function () {
       expect(jQuery('th[class*=right]', element).length).toBe(1)
     })
-    it('has a `<th class=`right`>` that contains a <i class=`icon-arrow-right`> element', function () {
-      expect(jQuery('th[class*=right] > i[class*=icon-arrow-right]', element).length).toBe(1)
+    it('has a `<th class=`right`>` that contains a <i class=`fa-chevron-right`> element', function () {
+      expect(jQuery('th[class*=right] > i[class*=fa-chevron-right]', element).length).toBe(1)
     })
     it('has a `<th class=`left`>` that contains a sr description set in simplified chinese', function () {
       expect(jQuery('th[class*=left] .sr-only', element).text()).toBe('上一页')

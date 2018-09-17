@@ -5,7 +5,7 @@ var modules = [
   'node_modules/moment/moment.js',
   'node_modules/moment/locale/*.js',
   'node_modules/moment-timezone/builds/moment-timezone-with-data.js',
-  'node_modules/bootstrap/dist/js/bootstrap.js',
+  'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
   'node_modules/angular/angular.js',
   'node_modules/angular-mocks/angular-mocks.js'
 ]

@@ -63,10 +63,10 @@ describe('dropdownSelector', function () {
 
       var dropdownLink = jQuery('#dropdown', element)
       var parent = dropdownLink.parent('div.dropdown')
-      expect(parent.hasClass('open')).toBeFalsy()
+      expect(parent.hasClass('show')).toBeFalsy()
 
       dropdownLink.dropdown().trigger('click')
-      expect(parent.hasClass('open')).toBeTruthy()
+      expect(parent.hasClass('show')).toBeTruthy()
 
       var dropDownSpy = spyOn(jQuery.fn, 'dropdown').and.callThrough()
 
@@ -98,10 +98,10 @@ describe('dropdownSelector', function () {
 
       var dropdownLink = jQuery('#dropdown', element)
       var parent = dropdownLink.parent('div.dropdown')
-      expect(parent.hasClass('open')).toBeFalsy()
+      expect(parent.hasClass('show')).toBeFalsy()
 
       dropdownLink.dropdown().trigger('click')
-      expect(parent.hasClass('open')).toBeTruthy()
+      expect(parent.hasClass('show')).toBeTruthy()
 
       var dropDownSpy = spyOn(jQuery.fn, 'dropdown').and.callThrough()
 
