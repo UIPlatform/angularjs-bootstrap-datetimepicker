@@ -1,5 +1,5 @@
 {
-  "name": "@ui-platform/angularjs-bootstrap4-datetimepicker",
+  "name": "angularjs-bootstrap4-datetimepicker",
   "description": "This directive allows you to add a datetime-picker to your form elements.",
   "main": "dist/datetimepicker.js",
   "authors": [
